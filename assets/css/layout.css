@@ -1,0 +1,22 @@
+
+header {
+    background-image: url(../images/h1-rev-slide1-bckg.jpg);
+    padding:10px 70px;
+    height: 100vh; 
+
+    background-position: center;
+    background-size: cover;
+}
+
+
+main {
+    position: relative;
+}
+
+#travel-essentials-items {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/h5-bckg-img-02.jpg);
+    gap: 20px;
+    padding: 20px;
+}

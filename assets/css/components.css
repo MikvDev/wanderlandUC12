@@ -1,0 +1,376 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#nav-ctn-top {
+  display: flex;
+  font-style: italic;
+  font-family: "Crimson Text";
+  justify-content: space-between;
+  font-size: 18px;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.482)   ;
+}
+#nav-ctn-top ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap:10px;
+    
+}
+#socials-links ul li{
+   cursor: pointer;
+    
+}
+#nav-cnt li:hover {
+    color:  #5a7f5f;
+    background-color: white;
+}
+#nav-cnt {
+    display: flex;
+    font-family: "Oswald";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    gap: 50px;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.482);
+    padding: 20px;
+}
+#nav-cnt ul {
+    display: flex;
+
+    list-style: none;
+    gap: 40px;
+    
+}
+#nav-cnt li {
+    cursor: pointer;
+    padding: 5px 10px;  
+}
+#span-info-1 {
+    display: flex;
+    font-family: "Crimson Text";
+    gap: 20px;
+    font-size: 18px;
+    color: white;
+}
+#span-info-2 {
+    display: flex;
+    font-family: "Crimson Text";
+    gap: 30px;
+    font-size: 24px;
+    color: white;
+}
+#hero {
+    display: flex;
+    background-color: antiquewhite;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background:transparent;
+    color: white;
+
+}
+#hero h1 {
+    font-family: "Oswald";
+    font-size: 54px;
+    margin-bottom: 20px;
+}
+#hero p {
+    width: 530px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Mulish";
+
+}
+#hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 54px;
+    
+    
+}
+.arrow-left {
+    position: absolute;
+    left: 0;
+    top: 30%;
+   
+   cursor: pointer;
+   
+   
+}
+.arrow-left img {
+    width: 40px;
+    height: 50px;
+}
+.arrow-rigth {
+    position: absolute;
+    right: 0;
+    top: 30%;
+    
+    cursor: pointer;
+}
+button {
+    background-color: #5a7f5f;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    font-family: "Oswald";
+    font-size: 20px;
+    width: 157px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    
+}
+
+.divisor {
+    position: absolute;
+    top: -190px;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.divisor img {
+    
+    
+    width: 100%;
+}
+#sponsor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}   
+#sponsor ul {
+    display: flex;
+    gap: 120px;
+    list-style: none;
+}   
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald";
+   
+    margin-top: 100px;
+    flex-direction: column;
+}
+.travel-ctn {
+    margin-top: 100px;;
+    display: flex;
+    padding: 0px 180px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+   
+    
+}
+.travel-ctn h1 {
+    font-size: 29px;
+    font-family: 'Oswald';
+}
+.travel-ctn p {
+    font-family: 'Crimson Text';
+    color: #878787;
+    
+    font-size: 16px;
+}
+.travel-ctn .img-ctn img {
+    width: 600px;
+    
+    height: 100%;
+   
+}
+.text-ctn-travel {
+    width:420px;
+}
+#newsletter-subs {
+    display: flex;
+    background-image: url(../images/h5-bckg-img-02.jpg);
+    
+    background-position: center;
+    background-size: contain;
+    
+    
+    align-items: center;
+    background-color: #edeae1;
+    padding: 50px 180px;
+    gap: 20px;
+    margin-top: 100px;
+}
+#newsletter-subs h1 {
+    font-family: 'Oswald';
+    font-size: 42px;
+}
+#newsletter-subs p {
+    font-family: 'Mulish';
+    color: #878787;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+#newsletter-subs input {
+    border: none;
+   height: 57px;
+   margin-right: 10px;
+   font-family: 'Crimson Text';
+   font-style: italic;
+   font-size: 18px;
+   outline: none;
+    padding: 20px;
+}
+#newsletter-subs button  {
+   background-color: #5a7f5f;
+   color: #f6f6f6;
+    height: 57px;
+   width: 200px;
+   border: none;
+   
+   cursor: pointer;
+   font-family: "Oswald";
+   font-size: 18px;
+   font-weight: bold;
+   
+}
+#newsletter-subs-text > span {
+     font-family: 'Crimson Text';
+     font-size: 19px;
+     font-style: italic;
+     color: #878787;
+     
+}
+#newsletter-subs-text {
+    padding: 90px 0px 30px 30px;
+}
+
+#newsletter-span {
+    font-family: 'Oswald';
+    font-size: 42px;
+    color: #5a7f5f;
+    font-weight: bold;
+}
+
+
+
+
+#posts-carossel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+.title > span {
+    font-family: 'Crimson Text';
+    font-size: 21px;
+  
+   font-style: italic;
+   color: #878787;
+}
+.title h1 {
+    font-size: 50px;
+}
+#travel-tips-span {
+    font-size: 50px;
+    color: #5a7f5f;
+}
+
+#blog-post-ctn {
+    padding: 40px;
+}
+
+.post-card{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    text-align: start;
+}
+.post-card img {
+    width:400px;
+}
+.post-card h1 {
+    width: 350px;
+    font-size: 29px;
+    font-family: 'Oswald';
+}
+.badge-sale {
+    position: absolute;
+    background-color: #f2f2ea;
+    color: #878787;
+    padding: 5px 10px;
+   
+    font-size: 18px;
+    font-family: 'Crimson Text';
+    font-style: italic;
+    width: 170px;
+    top: 18px;
+    left: -20px;
+}
+.span-travel-blog  {
+    display: inline;
+    margin: 30px 0px 10px 0px;
+    
+    font-family: 'Crimson Text';
+    font-size: 16px;
+    color: #878787;
+    
+}
+
+#travel-essentials-items {
+
+}
+.item {
+    display: flex;
+    flex-direction: column;
+}
+.item img {
+    width: 300px;
+    
+}
+.item span {
+    font-family: 'Crimson Text';
+    font-size: 16px;
+    color: #1E1E1E;
+    font-style: italic;
+}
+.item h1 {
+    font-family: 'Oswald';
+
+}
+#items-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
