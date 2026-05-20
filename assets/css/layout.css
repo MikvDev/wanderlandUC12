@@ -1,6 +1,6 @@
 
 header {
-    background-image: url(../images/h1-rev-slide1-bckg.jpg);
+    background-image: url(../images/bg-imgs/h1-rev-slide1-bckg.jpg);
     padding:10px 70px;
     height: 100vh; 
 
@@ -18,5 +18,31 @@ main {
     flex-direction: column;
     background-image: url(../images/h5-bckg-img-02.jpg);
     gap: 20px;
+    background-repeat: no-repeat;
     padding: 20px;
+}
+footer {
+    background-color: #242625;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    padding: 60px 290px 0px 60px;
+    flex-direction: column;
+}
+#newsletter {
+    background-image: url(../images/bg-imgs/h5-bckg-img-02.jpg);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+#about {
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    gap: 110px;
+    margin-top: 70px;
 }
