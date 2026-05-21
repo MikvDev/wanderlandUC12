@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    
+  
    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
    <link rel="stylesheet" href="./assets/images/icons/elegant_font/HTML CSS/style.css">
@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <div id="nav-ctn-top">
+        <div id="nav-ctn-top"   >
           <div id="span-info-1">
             <span><i class="fa-solid fa-phone fa-2xs" style="color: rgb(255, 255, 255);"></i> 857585748</span>
             <span><i class="fa-regular fa-envelope fa-2xs" style="color: rgb(255, 255, 255);"></i> info@wanderland.com</span>
@@ -34,15 +34,75 @@
                         <span> <i   class="icon_map_alt" style="color: rgb(255, 255, 255) ;"></i>destinations</span>
                     </div>
                     <ul>
-                        <li>Home</li>
-                        <li>page</li>
-                        <li>Destinations</li>
+                        <li  style="background-color: #f1f1e7;" class="has-drop">
+                            <a href="">Home</a>
+                            <div class="menu-drop">
+                                <ul>
+                                    <li>Main home</li>
+                                    <li>Alternating Posts</li>
+                                    <li>Travelogue Home</li>
+                                    <li>Travel Blog Metro</li>
+                                    <li>Floating Posts</li>
+                                    <li>Blog Divided</li>
+                                    <li>Travel Blog</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="has-drop">
+                            <a href="">pages</a>
+                            <div   class="menu-drop">
+                                <ul>
+                                    <li>Europe</li>
+                                    <li>Asia</li>
+                                    <li>North </li>
+                                    <li>South America</li>
+                                    <li>Australia</li>
+                                    <li>Africa</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="has-drop">
+                            <a href="">destinations</a>
+                            <div   class="menu-drop">
+                                <ul>
+                                    <li>Europe</li>
+                                    <li>Asia</li>
+                                    <li>North America</li>
+                                    <li>South America</li>
+                                    <li>Australia</li>
+                                    <li>Africa</li>
+                                </ul>
+                            </div>
+                        </li>
+                        
                     </ul>
                     <img   src="./assets/images/logo-img-03.png" style="width: 120px; height: auto" alt="Wanderland Logo">
                     <ul>
-                        <li>blog</li>
-                        <li>shop</li>
-                        <li>landing</li>
+                        <li class="has-drop">
+                        <a href="">blog</a>
+                        <div class="menu-drop">
+                            <ul>
+                                <li>Blog 1</li>
+                                <li>Blog 2</li>
+                                <li>Blog 3</li>
+                            </ul>
+                        </div>
+                        </li>
+                        <li class="has-drop">
+                            <a href="">shop</a>
+                            <div style="height: 200px"  class="menu-drop">
+                                <ul>
+                                    <li>Product list</li>
+                                    <li>Product single</li>
+                                    <li>Shop layouts</li>
+                                    <li>Shop pages</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li >
+                            <a href="">landing</a>
+                           
+                        </li>
                     </ul>
                     <div>
                         <span>search <i class="icon_search" style="color: rgb(255, 255, 255);"></i></span>
@@ -95,12 +155,12 @@
        <section id="travel-info">
 
 
-           <div class="travel-ctn">
-            <div class="img-ctn">
+           <div class="travel-ctn data-tilt data-tilt-glare data-tilt-max-glare="0.5"">
+            <div class="img-ctn"  data-tilt  data-tilt-max="5">
                 <img src="./assets/images/bg-imgs/blog-post-img-01.jpg" alt="img-travel">
     
             </div>
-            <div style="style="margin-left: 300px;""    class="text-ctn-travel ">
+            <div style="margin-left: 80px;""    class="text-ctn-travel ">
                 <span><i class="fa-regular fa-calendar"></i> October 11, 2019</span>
                 <span><i class="fa-regular fa-calendar"></i> October 11, 2019</span>
                 
@@ -110,7 +170,7 @@
     
             </div>
            </div>
-           <div style="margin-left: 300px;"  class="travel-ctn ">
+           <div style="margin-left: 340px;"  class="travel-ctn ">
                <div class="text-ctn-travel">
                    <span><i class="fa-regular fa-calendar"></i> October 11, 2019</span>
                    <span><i class="fa-regular fa-calendar"></i> October 11, 2019</span>
@@ -120,7 +180,7 @@
                    <button>Read More</button>
                    
                 </div>
-                <div class="img-ctn">
+                <div class="img-ctn " data-tilt  data-tilt-max="5" >
                     <img src="./assets/images/bg-imgs/blog-post-img-02.jpg" alt="img-travel">
         
                 </div>
@@ -140,7 +200,7 @@
                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididu nt ut labore et dolore minim veniam, quism.</p>
                    <input type="text" placeholder="Name">
                    <input type="text" placeholder="Email">
-                   <button>SUBSCRIBE <i><img src="./assets/images/arrow-top-rigth-white.svg" alt="arrow-white" style="width: 16px;"></i> </button>
+                   <button>SUBSCRIBE <i class="arrow_up_alt"></i> </button>
                    
                 </div>
            </div>
@@ -158,8 +218,10 @@
                      <i class="icon_tags"></i> Adventure
                     </span>
                 </div>
+                <div class="image-ctn" data-tilt  data-tilt-max="5" >
+                    <img src="./assets/images/bg-imgs/blog-post-img-03.jpg" alt="post-img">
 
-                <img src="./assets/images/bg-imgs/blog-post-img-03.jpg" alt="post-img">
+                </div>
                   <div class="span-travel-blog">
                <span><i class="fa-regular fa-calendar"></i> October 11, 2019</span>
                <span><i class="fa-regular fa-calendar"></i> October 11, 2019</span>
@@ -175,8 +237,9 @@
                        <i class="icon_tags"></i> Adventure
                     </span>
                 </div>
-
-            <img src="./assets/images/bg-imgs/blog-post-img-04 (1).jpg" alt="post-img">
+<div class="image-ctn" data-tilt  data-tilt-max="5" >
+                <img src="./assets/images/bg-imgs/blog-post-img-04 (1).jpg" alt="post-img">
+            </div>
              <div class="span-travel-blog">
                <span><i class="fa-regular fa-calendar"></i> October 11, 2019</span>
                <span><i class="fa-regular fa-calendar"></i> October 11, 2019</span>
@@ -190,8 +253,10 @@
                         <i class="icon_tags"></i> Adventure
                     </span>
                 </div>
+                <div class="image-ctn" data-tilt  data-tilt-max="5" >
+                <img src="./assets/images/bg-imgs/blog-post-img-05.jpg" alt="post-img">
 
-            <img src="./assets/images/bg-imgs/blog-post-img-05.jpg" alt="post-img">
+            </div>
            <div class="span-travel-blog">
                <span><i class="fa-regular fa-calendar"></i> October 11, 2019</span>
                <span><i class="fa-regular fa-calendar"></i> October 11, 2019</span>
@@ -241,7 +306,6 @@
             </div>
             <div class="divisor-top-img">
                 <img style="position: absolute;"   src="./assets/images/h1-img-26.png" alt="">
-            </div>
            </div>
        </section>
     </main>
@@ -282,5 +346,7 @@ explore outdoor experiences through photos and diaries with tips & tricks.
             
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    
 </body>
 </html>

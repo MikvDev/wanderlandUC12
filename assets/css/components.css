@@ -188,6 +188,7 @@ button {
     justify-content: center;
     align-items: center;
     gap: 40px;
+    transform-style: preserve-3d
    
     
 }
@@ -327,7 +328,8 @@ button {
     background-color: #f2f2ea;
     color: #878787;
     padding: 5px 10px;
-   
+    z-index: 10;
+    transform: translateZ(40px);
     font-size: 18px;
     font-family: 'Crimson Text';
     font-style: italic;
@@ -344,8 +346,21 @@ button {
     color: #878787;
     
 }
+.arrow_up_alt:before {
+	content: "\e039";
+}
 
 
+
+#sponsor img {
+    transition: 0.5s ease-in-out;
+}
+#sponsor img:hover {
+    opacity: 0.5;
+    
+
+
+}
 .icon::before{
     
     content: "\f3ae\f3ae\f3ae\f3ae\f3ae"; 
@@ -499,4 +514,52 @@ button {
     left: 0;
     top: 0;
     
+}
+.has-drop{
+    position: relative;
+}
+.menu-drop {
+    position: absolute;
+    top:60px;
+    z-index: 1000;
+    left: 0;
+    height: auto;
+    width: 220px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.menu-drop ul {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff;
+   line-height: 0px;
+    height: 400px;
+    padding: 40px;
+    
+}
+.menu-drop li {
+   
+    font-family: 'Crimson Text';
+    font-style: italic;
+    color: #878787;
+    font-weight: 500;
+    font-size: 18px;
+   
+}
+.has-drop:hover .menu-drop {
+    color: #f6f6f6;
+    background-color: #878787;
+   transform: translateY(10px);
+    opacity: 1;
+     visibility: visible;
+    transition: all 0.3s ease-in-out;
+}
+.post-card {
+    
+        
+        transform-style: preserve-3d;
+}
+.image-ctn img {
+    transition: all 0.3s ease-in-out;
 }
