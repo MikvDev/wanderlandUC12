@@ -1,6 +1,3 @@
-/* ==========================================
-   NAVEGAÇÃO
-   ========================================== */
 
 #socials-links ul li {
   cursor: pointer;
@@ -36,7 +33,7 @@ a {
 
 #nav-cnt li:hover a {
   color: #5a7f5f;
-  background-color: white;
+  background-image: url(../images/borda-rasgada.png);
 }
 
 .has-drop {
@@ -81,10 +78,6 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-/* ==========================================
-   SPAN DE INFORMAÇÕES
-   ========================================== */
-
 #span-info-1 {
   display: flex;
   gap: 20px;
@@ -101,9 +94,6 @@ a {
   color: white;
 }
 
-/* ==========================================
-   HERO
-   ========================================== */
 
 #hero {
   display: flex;
@@ -168,6 +158,14 @@ a {
   justify-content: center;
   align-items: center;
 }
+.divisor-items{
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
 
 .divisor img {
   width: 100%;
@@ -177,10 +175,6 @@ a {
   top: 0;
   left: 0;
 }
-
-/* ==========================================
-   BOTÕES
-   ========================================== */
 
 button {
   width: 157px;
@@ -194,10 +188,6 @@ button {
   border: none;
   cursor: pointer;
 }
-
-/* ==========================================
-   SPONSORS
-   ========================================== */
 
 #sponsor {
   display: flex;
@@ -219,10 +209,6 @@ button {
 #sponsor img:hover {
   opacity: 0.5;
 }
-
-/* ==========================================
-   TÍTULOS
-   ========================================== */
 
 .title {
   display: flex;
@@ -249,9 +235,6 @@ button {
   color: #5a7f5f;
 }
 
-/* ==========================================
-   SEÇÃO DE VIAGENS
-   ========================================== */
 
 .travel-ctn {
   display: flex;
@@ -283,18 +266,14 @@ button {
   width: 420px;
 }
 
-/* ==========================================
-   NEWSLETTER
-   ========================================== */
 
 #newsletter-subs {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 50px;
+  padding: 40px 90px;
   margin-top: 100px;
-  background-position: center;
-  background-size: contain;
+ 
 }
 
 #newsletter-subs h1 {
@@ -353,9 +332,6 @@ button {
   color: #5a7f5f;
 }
 
-/* ==========================================
-   BLOG / POSTS
-   ========================================== */
 
 #posts-carossel {
   display: flex;
@@ -401,6 +377,11 @@ button {
   background-color: #f2f2ea;
   transform: translateZ(40px);
 }
+#travel-info span {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-size: 1
+}
 
 .span-travel-blog {
   display: inline;
@@ -414,9 +395,6 @@ button {
   transition: all 0.3s ease-in-out;
 }
 
-/* ==========================================
-   ÍCONES
-   ========================================== */
 
 .icon::before {
   content: "\f3ae\f3ae\f3ae\f3ae\f3ae";
@@ -442,10 +420,14 @@ button {
 .icon_search:before {
   content: "\55";
 }
+.icon_pencil_alt:before{
+ content: "\6a";
+} 
+#men-li {
+  background-image: url(/assets/images/);
+}
 
-/* ==========================================
-   ITENS / CARDS
-   ========================================== */
+
 
 #items-container {
   display: flex;
@@ -481,9 +463,7 @@ button {
   font-family: "Oswald";
 }
 
-/* ==========================================
-   SOBRE / ABOUT
-   ========================================== */
+
 
 #about h2 {
   font-family: "Oswald";
@@ -507,9 +487,6 @@ button {
   font-weight: 600;
 }
 
-/* ==========================================
-   FORMULÁRIOS
-   ========================================== */
 
 #forms-container {
   display: flex;
@@ -549,9 +526,6 @@ button {
   margin-left: 6px;
 }
 
-/* ==========================================
-   FOOTER
-   ========================================== */
 
 #footer-top {
   display: flex;
@@ -572,9 +546,8 @@ button {
   color: #b9b9b9;
 }
 
-/* ==========================================
-   NEWS
-   ========================================== */
+
+ 
 
 #news-ctn {
   margin-top: 20px;
@@ -604,11 +577,11 @@ button {
   }
 
   .travel-ctn {
-    padding: 0 40px; /* Reduzindo o recuo exagerado */
+    padding: 0 40px; 
   }
 
   .travel-ctn .img-ctn img {
-    width: 100%; /* Imagem se adapta ao container */
+    width: 100%; 
     height: auto;
   }
 
@@ -623,11 +596,17 @@ button {
   }
 }
 @media (max-width: 768px) {
-  /* Menu / Nav */
+ 
   #nav-cnt {
     flex-direction: column;
     height: auto;
     display: none;
+  }
+  #span-info-2 span{
+    background-color: #5a7f5f;
+  }
+  .divisor {
+    top: 2px;
   }
   .title h1,
   span {
@@ -639,32 +618,31 @@ button {
     padding: 0;
   }
 
-  /* Hero */
   #hero h1 {
     font-size: 32px;
     text-align: center;
   }
 
   #hero p {
-    width: 90%; /* Remove a largura fixa de 530px */
+    width: 90%; 
   }
 
   .arrow-left,
   .arrow-rigth {
-    display: none; /* Setas costumam atrapalhar no mobile, melhor usar swipe ou botões menores */
+    display: none; 
+    
   }
 
-  /* Sponsors */
   #sponsor ul {
     flex-direction: column;
     gap: 30px;
     justify-content: center;
   }
 
-  /* Viagens (Travel Container) */
+
   .travel-ctn {
-    flex-direction: column !important; /* Força empilhamento */
-    padding: 0 20px;
+    flex-direction: column ; 
+    
     text-align: start;
   }
   .travel-ctn span {
@@ -675,12 +653,18 @@ button {
     width: 100%;
     margin-left: 0 !important;
   }
+  #newsletter {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-  /* Newsletter */
+  }
+
   #newsletter-subs {
     flex-direction: column;
     padding: 20px;
     text-align: start;
+
   }
 
   #newsletter-subs-text {
@@ -697,7 +681,9 @@ button {
     width: 100%;
   }
 
-  /* Blog / Posts */
+  footer {
+    display: none !important;
+  }
   #posts-carossel {
     flex-direction: column;
     align-items: center;
@@ -721,30 +707,9 @@ button {
     width: 300px;
   }
 
-  /* Footer */
-  footer {
-    font-size: 10px !important;
-    padding: 20px;
-  }
-  #footer-top {
-    padding: 30px;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-  #footer-top p {
-    width: 200px;
-    font-size: 15px;
-  }
   #about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  fo #about p {
-    width: 100%;
+    
+    display: none;
   }
 
   #forms-container {
