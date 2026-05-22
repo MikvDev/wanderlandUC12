@@ -21,7 +21,8 @@ main {
     background-image: url(../images/h5-bckg-img-02.jpg);
     gap: 20px;
     background-repeat: no-repeat;
-    padding: 20px;
+    padding: 90px;
+    
 }
 footer {
     background-color: #242625;

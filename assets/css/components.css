@@ -1,565 +1,753 @@
+/* ==========================================
+   NAVEGAÇÃO
+   ========================================== */
 
+#socials-links ul li {
+  cursor: pointer;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#nav-ctn-top {
+#nav-cnt {
   display: flex;
-  font-style: italic;
-  font-family: "Crimson Text";
   justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  font-family: "Oswald";
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.482);
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#nav-cnt ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+#nav-cnt li {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+#nav-cnt li:hover a {
+  color: #5a7f5f;
+  background-color: white;
+}
+
+.has-drop {
+  position: relative;
+}
+
+.menu-drop {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 1000;
+  width: 220px;
+  height: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-drop ul {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  padding: 40px;
+  background-color: #fff;
+  line-height: 0px;
+}
+
+.menu-drop li {
+  font-family: "Crimson Text";
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 500;
+  color: #878787;
+}
+
+.has-drop:hover .menu-drop {
+  color: #f6f6f6;
+  background-color: #878787;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(10px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* ==========================================
+   SPAN DE INFORMAÇÕES
+   ========================================== */
+
+#span-info-1 {
+  display: flex;
+  gap: 20px;
+  font-family: "Crimson Text";
   font-size: 18px;
   color: white;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.482)   ;
 }
-#nav-ctn-top ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap:10px;
-    
-}
-#socials-links ul li{
-   cursor: pointer;
-    
-}
-#nav-cnt li:hover {
-    color:  #5a7f5f;
-    background-color: white;
-}
-#nav-cnt {
-    display: flex;
-    font-family: "Oswald";
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 700;
-    gap: 50px;
-    color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.482);
-    padding: 20px;
-}
-#nav-cnt ul {
-    display: flex;
 
-    list-style: none;
-    gap: 40px;
-    
-}
-#nav-cnt li {
-    cursor: pointer;
-    padding: 5px 10px;  
-}
-#span-info-1 {
-    display: flex;
-    font-family: "Crimson Text";
-    gap: 20px;
-    font-size: 18px;
-    color: white;
-}
 #span-info-2 {
-    display: flex;
-    font-family: "Crimson Text";
-    gap: 30px;
-    font-size: 24px;
-    color: white;
+  display: flex;
+  gap: 30px;
+  font-family: "Crimson Text";
+  font-size: 24px;
+  color: white;
 }
+
+/* ==========================================
+   HERO
+   ========================================== */
+
 #hero {
-    display: flex;
-    background-color: antiquewhite;
-    flex-direction: column;
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background:transparent;
-    color: white;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 80vh;
+  background: transparent;
+  color: white;
 }
+
 #hero h1 {
-    font-family: "Oswald";
-    font-size: 54px;
-    margin-bottom: 20px;
+  font-family: "Oswald";
+  font-size: 54px;
+  margin-bottom: 20px;
 }
-#hero p {
-    width: 530px;
-    text-align: center;
-    font-size: 18px;
-    font-family: "Mulish";
 
+#hero p {
+  width: 530px;
+  font-family: "Mulish";
+  font-size: 18px;
+  text-align: center;
 }
+
 #hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 54px;
-    
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 54px;
 }
+
 .arrow-left {
-    position: absolute;
-    left: 0;
-    top: 30%;
-   
-   cursor: pointer;
-   
-   
+  position: absolute;
+  top: 30%;
+  left: 0;
+  cursor: pointer;
 }
-.arrow-left img {
-    width: 40px;
-    height: 50px;
+
+.arrow_left:before {
+  content: "\23";
 }
+
+.arrow_right:before {
+  content: "\24";
+  font-size: 40px;
+}
+
 .arrow-rigth {
-    position: absolute;
-    right: 0;
-    top: 30%;
-    
-    cursor: pointer;
-}
-button {
-    background-color: #5a7f5f;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    cursor: pointer;
-    font-family: "Oswald";
-    font-size: 20px;
-    width: 157px;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    
+  position: absolute;
+  top: 30%;
+  right: 0;
+  cursor: pointer;
 }
 
 .divisor {
-    position: absolute;
-    top: -190px;
-    left: 0;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    
+  position: absolute;
+  top: -190px;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
+
 .divisor img {
-    
-    
-    width: 100%;
+  width: 100%;
 }
+
+.divisor-top-img img {
+  top: 0;
+  left: 0;
+}
+
+/* ==========================================
+   BOTÕES
+   ========================================== */
+
+button {
+  width: 157px;
+  padding: 10px 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: "Oswald";
+  font-size: 20px;
+  color: white;
+  background-color: #5a7f5f;
+  border: none;
+  cursor: pointer;
+}
+
+/* ==========================================
+   SPONSORS
+   ========================================== */
+
 #sponsor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-}   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
 #sponsor ul {
-    display: flex;
-    gap: 120px;
-    list-style: none;
-}   
+  display: flex;
+  list-style: none;
+  gap: 120px;
+}
+
+#sponsor img {
+  transition: opacity 0.5s ease-in-out;
+}
+
+#sponsor img:hover {
+  opacity: 0.5;
+}
+
+/* ==========================================
+   TÍTULOS
+   ========================================== */
+
 .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Oswald";
-   
-    margin-top: 100px;
-    flex-direction: column;
-}
-.travel-ctn {
-    margin-top: 100px;;
-    display: flex;
-    padding: 0px 180px;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    transform-style: preserve-3d
-   
-    
-}
-.travel-ctn h1 {
-    font-size: 29px;
-    font-family: 'Oswald';
-}
-.travel-ctn p {
-    font-family: 'Crimson Text';
-    color: #878787;
-    
-    font-size: 16px;
-}
-.travel-ctn .img-ctn img {
-    width: 600px;
-    
-    height: 100%;
-   
-}
-.text-ctn-travel {
-    width:420px;
-}
-#newsletter-subs {
-    display: flex;
-    
-    background-position: center;
-    background-size: contain;
-    
-    
-    align-items: center;
-   
-    padding: 50px 180px;
-    gap: 20px;
-    margin-top: 100px;
-}
-#newsletter-subs h1 {
-    font-family: 'Oswald';
-    font-size: 42px;
-}
-#newsletter-subs p {
-    font-family: 'Mulish';
-    color: #878787;
-    font-weight: 600;
-    margin-top: 10px;
-    font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald";
+  margin-top: 100px;
 }
 
-#newsletter-subs input {
-    border: none;
-   height: 57px;
-   margin-right: 10px;
-   font-family: 'Crimson Text';
-   font-style: italic;
-   font-size: 18px;
-   outline: none;
-    padding: 20px;
-}
-#newsletter-subs button  {
-   background-color: #5a7f5f;
-   color: #f6f6f6;
-    height: 57px;
-   width: 200px;
-   border: none;
-   
-   cursor: pointer;
-   font-family: "Oswald";
-   font-size: 18px;
-   font-weight: bold;
-   
-}
-#newsletter-subs-text > span {
-     font-family: 'Crimson Text';
-     font-size: 19px;
-     font-style: italic;
-     color: #878787;
-     
-}
-#newsletter-subs-text {
-    padding: 90px 0px 30px 30px;
-}
-
-#newsletter-span {
-    font-family: 'Oswald';
-    font-size: 42px;
-    color: #5a7f5f;
-    font-weight: bold;
-}
-
-
-
-
-#posts-carossel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    
+.title h1 {
+  font-size: 50px;
 }
 
 .title > span {
-    font-family: 'Crimson Text';
-    font-size: 21px;
-  
-   font-style: italic;
-   color: #878787;
+  font-family: "Crimson Text";
+  font-style: italic;
+  font-size: 21px;
+  color: #878787;
 }
-.title h1 {
-    font-size: 50px;
-}
+
 #travel-tips-span {
-    font-size: 50px;
-    color: #5a7f5f;
+  font-size: 50px;
+  color: #5a7f5f;
+}
+
+/* ==========================================
+   SEÇÃO DE VIAGENS
+   ========================================== */
+
+.travel-ctn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 0px 180px;
+  margin-top: 100px;
+  transform-style: preserve-3d;
+}
+
+.travel-ctn h1 {
+  font-family: "Oswald";
+  font-size: 29px;
+}
+
+.travel-ctn p {
+  font-family: "Crimson Text";
+  font-size: 16px;
+  color: #878787;
+}
+
+.travel-ctn .img-ctn img {
+  width: 600px;
+  height: 100%;
+}
+
+.text-ctn-travel {
+  width: 420px;
+}
+
+/* ==========================================
+   NEWSLETTER
+   ========================================== */
+
+#newsletter-subs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 50px;
+  margin-top: 100px;
+  background-position: center;
+  background-size: contain;
+}
+
+#newsletter-subs h1 {
+  font-family: "Oswald";
+  font-size: 42px;
+}
+
+#newsletter-subs p {
+  font-family: "Mulish";
+  font-size: 18px;
+  font-weight: 600;
+  color: #878787;
+  margin-top: 10px;
+}
+
+#newsletter-subs input {
+  height: 57px;
+  padding: 20px;
+  margin-right: 10px;
+  font-family: "Crimson Text";
+  font-style: italic;
+  font-size: 18px;
+  color: #878787;
+
+  border: none;
+  outline: none;
+}
+
+#newsletter-subs button {
+  width: 200px;
+  height: 57px;
+  font-family: "Oswald";
+  font-size: 18px;
+  font-weight: bold;
+  color: #f6f6f6;
+  background-color: #5a7f5f;
+  border: none;
+  cursor: pointer;
+}
+
+#newsletter-subs-text {
+  padding: 90px 0 30px 30px;
+}
+
+#newsletter-subs-text > span {
+  font-family: "Crimson Text";
+  font-style: italic;
+  font-size: 19px;
+  color: #878787;
+}
+
+#newsletter-span {
+  font-family: "Oswald";
+  font-size: 42px;
+  font-weight: bold;
+  color: #5a7f5f;
+}
+
+/* ==========================================
+   BLOG / POSTS
+   ========================================== */
+
+#posts-carossel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
 
 #blog-post-ctn {
-    padding: 40px;
+  padding: 40px;
 }
 
-.post-card{
-    
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    text-align: start;
+.post-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  text-align: start;
+  transform-style: preserve-3d;
 }
+
 .post-card img {
-    width:400px;
+  width: 400px;
 }
+
 .post-card h1 {
-    width: 350px;
-    font-size: 29px;
-    font-family: 'Oswald';
+  width: 350px;
+  font-family: "Oswald";
+  font-size: 29px;
 }
+
 .badge-sale {
-    position: absolute;
-    background-color: #f2f2ea;
-    color: #878787;
-    padding: 5px 10px;
-    z-index: 10;
-    transform: translateZ(40px);
-    font-size: 18px;
-    font-family: 'Crimson Text';
-    font-style: italic;
-    width: 170px;
-    top: 18px;
-    left: -20px;
-}
-.span-travel-blog  {
-    display: inline;
-    margin: 30px 0px 10px 0px;
-    
-    font-family: 'Crimson Text';
-    font-size: 16px;
-    color: #878787;
-    
-}
-.arrow_up_alt:before {
-	content: "\e039";
+  position: absolute;
+  top: 18px;
+  left: -20px;
+  z-index: 10;
+  width: 170px;
+  padding: 5px 10px;
+  font-family: "Crimson Text";
+  font-style: italic;
+  font-size: 18px;
+  color: #878787;
+  background-color: #f2f2ea;
+  transform: translateZ(40px);
 }
 
-
-
-#sponsor img {
-    transition: 0.5s ease-in-out;
+.span-travel-blog {
+  display: inline;
+  margin: 30px 0 10px 0;
+  font-family: "Crimson Text";
+  font-size: 16px;
+  color: #878787;
 }
-#sponsor img:hover {
-    opacity: 0.5;
-    
 
+.image-ctn img {
+  transition: all 0.3s ease-in-out;
+}
 
+/* ==========================================
+   ÍCONES
+   ========================================== */
+
+.icon::before {
+  content: "\f3ae\f3ae\f3ae\f3ae\f3ae";
+  font-size: 20px;
+  letter-spacing: 2px;
 }
-.icon::before{
-    
-    content: "\f3ae\f3ae\f3ae\f3ae\f3ae"; 
-    font-size: 20px;
-    letter-spacing: 2px;
-}
+
 .ion-ios-star {
-   color: #878787;
-   font-size: 20px;
-   letter-spacing: 2px;
-
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #878787;
 }
 
+.arrow_up_alt:before {
+  content: "\e039";
+}
+.icon_tags::before {
+  content: "\e07c";
+}
+.icon_map_alt:before {
+  content: "\e01f";
+}
+.icon_search:before {
+  content: "\55";
+}
+
+/* ==========================================
+   ITENS / CARDS
+   ========================================== */
+
+#items-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  text-align: center;
+}
+
+#items-container span {
+  font-size: 21px;
+}
 
 .item {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
+
 .item img {
-    width: 300px;
-    
+  width: 100%;
 }
+
 .item span {
-    margin-top: 50px;
-    font-family: 'Crimson Text';
-    font-size: 16px;
-    color: #1E1E1E;
-    font-style: italic;
+  margin-top: 50px;
+  font-family: "Crimson Text";
+  font-style: italic;
+  font-size: 16px;
+  color: #1e1e1e;
 }
+
 .item h1 {
-    font-family: 'Oswald';
+  font-family: "Oswald";
+}
 
-}
-#items-container {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-#items-container span {
-    font-size: 21px;
-}
+/* ==========================================
+   SOBRE / ABOUT
+   ========================================== */
+
 #about h2 {
-    font-family: "Oswald";
-    font-size: 22px;
+  font-family: "Oswald";
+  font-size: 22px;
 }
-#about  p {
-    font-size: 16px;
-    color: #B9B9B9;
-    width: 200px;
-}
-#about button {
-    width: 200px;
-    background-color: transparent;
 
+#about p {
+  width: 200px;
+  font-size: 16px;
+  color: #b9b9b9;
 }
+
+#about button {
+  width: 200px;
+  background-color: transparent;
+}
+
+#about-p {
+  margin-top: 20px;
+  font-family: "Mulish";
+  font-weight: 600;
+}
+
+/* ==========================================
+   FORMULÁRIOS
+   ========================================== */
+
 #forms-container {
-    display: flex;
-   
-    justify-content: center;
-    flex-direction: column;
-    align-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
 
 #forms-container > input {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 #forms-container input {
-    font-size: 20px;
-    ;
-    font-family: 'Crimson Text';
-    font-style: italic;
-    padding: 20px 15px;
-    outline: none;
-    color: white;
-    background-color: transparent;
-    border: none;
-    border-left: 1px solid #B9B9B9;
-    border-bottom: 1px solid #B9B9B9;
+  padding: 20px 15px;
+  font-family: "Crimson Text";
+  font-style: italic;
+  font-size: 20px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-left: 1px solid #b9b9b9;
+  border-bottom: 1px solid #b9b9b9;
+  outline: none;
 }
-#forms-container input::placeholder {
-    color: rgba(255, 255, 255, 0.878);
-}
-#footer-top img {
-    width: 150px;
-    
 
+#forms-container input::placeholder {
+  color: rgba(255, 255, 255, 0.878);
 }
-#footer-top  {
+
+#forms-container button {
+  width: auto;
+  padding: 0;
+  font-size: 16px;
+}
+
+#forms-container i {
+  margin-left: 6px;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+#footer-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  text-align: start;
+}
+
+#footer-top img {
+  width: 150px;
+}
+
+#footer-top p {
+  width: 814px;
+  font-size: 25px;
+  font-style: italic;
+  color: #b9b9b9;
+}
+
+/* ==========================================
+   NEWS
+   ========================================== */
+
+#news-ctn {
+  margin-top: 20px;
+}
+
+#news-ctn span {
+  color: #5a7f5f;
+}
+
+#news-ctn i {
+  margin-right: 7px;
+}
+
+#news-ctn p {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  #nav-cnt {
+    gap: 20px;
+    padding: 15px;
+  }
+
+  #nav-cnt ul {
+    gap: 15px;
+  }
+
+  .travel-ctn {
+    padding: 0 40px; /* Reduzindo o recuo exagerado */
+  }
+
+  .travel-ctn .img-ctn img {
+    width: 100%; /* Imagem se adapta ao container */
+    height: auto;
+  }
+
+  #footer-top {
+    padding: 0 20px;
+    gap: 30px;
+  }
+
+  #footer-top p {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  /* Menu / Nav */
+  #nav-cnt {
+    flex-direction: column;
+    height: auto;
+    display: none;
+  }
+  .title h1,
+  span {
+    font-size: 30px !important;
+  }
+  #nav-cnt ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  /* Hero */
+  #hero h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  #hero p {
+    width: 90%; /* Remove a largura fixa de 530px */
+  }
+
+  .arrow-left,
+  .arrow-rigth {
+    display: none; /* Setas costumam atrapalhar no mobile, melhor usar swipe ou botões menores */
+  }
+
+  /* Sponsors */
+  #sponsor ul {
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  /* Viagens (Travel Container) */
+  .travel-ctn {
+    flex-direction: column !important; /* Força empilhamento */
+    padding: 0 20px;
     text-align: start;
-    display: flex;
+  }
+  .travel-ctn span {
+    font-size: 15px !important;
+  }
+
+  .travel-ctn .text-ctn-travel {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+
+  /* Newsletter */
+  #newsletter-subs {
+    flex-direction: column;
+    padding: 20px;
+    text-align: start;
+  }
+
+  #newsletter-subs-text {
+    padding: 20px 0;
+    text-align: start;
+  }
+
+  #newsletter-subs input {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  #newsletter-subs img {
+    width: 100%;
+  }
+
+  /* Blog / Posts */
+  #posts-carossel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .post-card img {
+    width: 100%;
+  }
+
+  .post-card h1 {
+    width: 100%;
+    font-size: 22px;
+  }
+
+  /* Items / Shoes */
+  #items-container {
+    flex-direction: column;
+  }
+
+  .item img {
+    width: 300px;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 10px !important;
+    padding: 20px;
+  }
+  #footer-top {
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    gap: 100px;
-}
-#footer-top  p {
-    font-size: 25px;
-    font-style: italic;
-    width: 814px;
-    color: #B9B9B9;
-}
-
-#forms-container {
-    display: flex;
-   
-    justify-content: center;
-    flex-direction: column;
-    align-items: start;
-}
-#forms-container button {
-    font-size: 16px;
-    width: auto;
-    padding: 0;
-}
-#forms-container i {
-    margin-left: 6px;
-}
-#news-ctn {
-    margin-top: 20px;
-}
-#about-p {
-    margin-top: 20px;
-    font-family: 'Mulish';
-    font-weight: 600;
-
-}
-#news-ctn span {
-    color: #5a7f5f;
-}
-#news-ctn i {
-    margin-right: 7px;
-}
-#news-ctn p {
-    font-family: 'Mu';
-    margin-top: 15px;
-    font-size: 18px;
-}
-.icon_tags::before {
-    content: "\e07c";
-}
-.icon_map_alt:before {
-	content: "\e01f";
-}
-
-.icon_search:before {
-	content: "\55";
-}
-.divisor-top-img img {
-    left: 0;
-    top: 0;
-    
-}
-.has-drop{
-    position: relative;
-}
-.menu-drop {
-    position: absolute;
-    top:60px;
-    z-index: 1000;
-    left: 0;
-    height: auto;
-    width: 220px;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-}
-.menu-drop ul {
+  }
+  #footer-top p {
+    width: 200px;
+    font-size: 15px;
+  }
+  #about {
     display: flex;
     flex-direction: column;
-    background-color: #ffff;
-   line-height: 0px;
-    height: 400px;
-    padding: 40px;
-    
-}
-.menu-drop li {
-   
-    font-family: 'Crimson Text';
-    font-style: italic;
-    color: #878787;
-    font-weight: 500;
-    font-size: 18px;
-   
-}
-.has-drop:hover .menu-drop {
-    color: #f6f6f6;
-    background-color: #878787;
-   transform: translateY(10px);
-    opacity: 1;
-     visibility: visible;
-    transition: all 0.3s ease-in-out;
-}
-.post-card {
-    
-        
-        transform-style: preserve-3d;
-}
-.image-ctn img {
-    transition: all 0.3s ease-in-out;
+    align-items: center;
+    text-align: center;
+  }
+  fo #about p {
+    width: 100%;
+  }
+
+  #forms-container {
+    align-items: center;
+  }
 }
